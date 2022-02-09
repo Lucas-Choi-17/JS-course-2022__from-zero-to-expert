@@ -5,13 +5,19 @@ let population = 52.82;
 const isIsland = "true";
 let language = "Korean";
 
-console.log(country);
-console.log(continent);
+console.log(population / 2);
+population++;
 console.log(population);
-console.log(isIsland);
-console.log(language);
+population--;
+console.log(population > 6);
+console.log(population < 33);
 
-population = 52;
-isIsland = false;
-console.log(population);
-console.log(isIsland);
+let description =
+  country +
+  " is in " +
+  continent +
+  ", and its " +
+  population +
+  " million people speaks " +
+  language;
+console.log(description);
