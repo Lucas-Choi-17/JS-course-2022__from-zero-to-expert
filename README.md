@@ -1,1 +1,2 @@
-JS-course-2022__from-zero-to-expert
+JS course 2022 : from zero to expert
+course by JONAS SCHMEDTMANN
