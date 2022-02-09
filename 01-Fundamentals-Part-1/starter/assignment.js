@@ -1,16 +1,17 @@
-let country = "Korea";
-let continent = "Asia";
+const country = "Korea";
+const continent = "Asia";
 let population = 52.82;
 
-//Assignment - Part 1 : Values and Variables
-// console.log(country);
-// console.log(continent);
-// console.log(population);
+const isIsland = "true";
+let language = "Korean";
 
-let isIsland = "true";
-let language;
+console.log(country);
+console.log(continent);
+console.log(population);
+console.log(isIsland);
+console.log(language);
 
-console.log(typeof isIsland);
-console.log(typeof population);
-console.log(typeof country);
-console.log(typeof language);
+population = 52;
+isIsland = false;
+console.log(population);
+console.log(isIsland);
