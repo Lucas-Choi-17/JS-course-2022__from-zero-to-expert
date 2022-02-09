@@ -1,46 +1,29 @@
-/* Values and Variables
-let js = "amazing";
+// Math operator
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+// 2 ** 3 means 2^3 = 2*2*2
+const firstName = "Lucas";
+const lastName = "Choi";
+console.log(firstName + " " + lastName);
 
-console.log(12 + 23 + 61 - 10);
-console.log("Jonas");
-console.log("23");
+// Assignment operator
+let x = 10 + 5; // 15
+x += 10; // x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
+x++; // x = x + 1 = 101
+x--; // x = x - 1 = 100
+x--; // x = x - 1 = 99
+console.log(x);
 
-let firstName = "Bob";
-console.log(firstName);
-console.log(firstName);
+// Comparison operator
+console.log(ageJonas > ageSarah);
+console.log(ageSarah >= 18);
+// <, >, <=, >=
 
-let myFirstJob = "Student";
-let myCurrentJob = "Programmer";
-console.log(myFirstJob);
-console.log(myCurrentJob);
-*/
+const isFullAge = ageSarah >= 18;
+console.log(typeof isFullAge);
 
-/* Data Types
-console.log(true);
-let javascriptIsFun = true;
-console.log(javascriptIsFun);
-
-console.log(typeof true);
-console.log(typeof javascriptIsFun);
-console.log(typeof 23);
-console.log(typeof "Jonas");
-
-javascriptIsFun = "YES!";
-console.log(typeof javascriptIsFun);
-
-let year;
-console.log(year);
-console.log(typeof year);
-year = 1991;
-console.log(year);
-console.log(typeof year);
-*/
-
-let age = 30;
-age = 31;
-console.log(age);
-const birthYear = 1997;
-console.log(birthYear);
-var job = "programmer";
-job = "teacher";
-console.log(job);
+console.log(now - 1991 > now - 2018);
