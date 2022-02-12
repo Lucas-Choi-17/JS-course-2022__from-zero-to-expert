@@ -1,11 +1,10 @@
-const numNeighbors = Number(
-  prompt("How many neighbor countries does your country have?")
-);
+const myLangEng = true;
+const myPopulation = 49.82;
+const myIsIsland = false;
 
-if (numNeighbors === 1) {
-  console.log("Only 1 border!");
-} else if (numNeighbors > 1) {
-  console.log("More than 1 border");
+const yesCriteria = myLangEng && myPopulation < 50 && !myIsIsland;
+if (yesCriteria) {
+  console.log("You should live in Korea :)");
 } else {
-  console.log("No borders");
+  console.log("Korea does nott meet your criteria :(");
 }
