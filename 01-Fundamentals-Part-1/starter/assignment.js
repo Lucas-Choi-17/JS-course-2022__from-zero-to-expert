@@ -1,34 +1,10 @@
-const country = "Korea";
-const continent = "Asia";
-let population = 52.82;
-
-const isIsland = "true";
-let language = "Korean";
-
-const average = 33;
-
-let description = `${country}'s population is `;
-if (population >= average) {
-  description += `above average.`;
-} else {
-  description += `${average - population} million below average.`;
-}
-console.log(description);
-
-population = 13;
-description = `${country}'s population is `;
-if (population >= average) {
-  description += `above average.`;
-} else {
-  description += `${average - population} million below average.`;
-}
-console.log(description);
-
-population = 130;
-description = `${country}'s population is `;
-if (population >= average) {
-  description += `above average.`;
-} else {
-  description += `${average - population} million below average.`;
-}
-console.log(description);
+console.log("9" - "5");
+// 4
+console.log("19" - "13" + "17");
+// 617
+console.log("19" - "13" + 17);
+// 23
+console.log("123" < 57);
+// false
+console.log(5 + 6 + "4" + 9 - 4 - 2);
+// 1143
