@@ -1,19 +1,20 @@
-// Type Convesion
-const inputYear = `1991`;
-console.log(inputYear + 18);
-console.log(Number(inputYear) + 18);
+// 5 falsy values : 0, '', undefined, null, NaN
 
-console.log(Number("Jonas"));
-console.log(typeof NaN);
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("jonas"));
+console.log(Boolean({}));
 
-console.log(String(23), 23);
+const money = 0;
+if (money) {
+  console.log("Don't spend it all ;) ");
+} else {
+  console.log("You should get a job!");
+}
 
-// Type Coercion
-console.log("I'm " + 23 + " years old");
-console.log("I'm " + "23" + " years old");
-console.log("23" - "10" - 3);
-console.log("23" + "10" + 3);
-
-let n = "1" + 1; // '11'
-n = n - 1; // '10'
-console.log(n);
+let height;
+if (height) {
+  console.log("YaY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}
