@@ -1,23 +1,19 @@
-let age = 19;
-const isOldEnough = age >= 18;
+// Type Convesion
+const inputYear = `1991`;
+console.log(inputYear + 18);
+console.log(Number(inputYear) + 18);
 
-if (isOldEnough) {
-  console.log(`Sarah can start driving license 🚗`);
-}
+console.log(Number("Jonas"));
+console.log(typeof NaN);
 
-age = 15;
-if (age >= 18) {
-  console.log(`Sarah can start driving license 🚗`);
-} else {
-  const yearsLeft = 18 - age;
-  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
-}
+console.log(String(23), 23);
 
-const birthYear = 1991;
-let century;
-if (birthYear <= 2000) {
-  century = 20;
-} else {
-  century = 21;
-}
-console.log(century);
+// Type Coercion
+console.log("I'm " + 23 + " years old");
+console.log("I'm " + "23" + " years old");
+console.log("23" - "10" - 3);
+console.log("23" + "10" + 3);
+
+let n = "1" + 1; // '11'
+n = n - 1; // '10'
+console.log(n);
