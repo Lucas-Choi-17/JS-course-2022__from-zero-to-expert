@@ -1,20 +1,21 @@
-// 5 falsy values : 0, '', undefined, null, NaN
+const age = 18;
+if (age === 18) console.log("You just became an adult :D");
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean("jonas"));
-console.log(Boolean({}));
+console.log("18" === 18);
+console.log("18" == 18); // does type coercion
 
-const money = 0;
-if (money) {
-  console.log("Don't spend it all ;) ");
+const favorite = Number(prompt("What's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if (favorite === 23) {
+  console.log("Cool! 23 is an amazing number!");
+} else if (favorite === 7) {
+  console.log("7 is also a cool number!");
 } else {
-  console.log("You should get a job!");
+  console.log("Number is not 23 or 7");
 }
 
-let height;
-if (height) {
-  console.log("YaY! Height is defined");
-} else {
-  console.log("Height is UNDEFINED");
+if (favorite !== 23) {
+  console.log("Why not 23?");
 }
