@@ -1,19 +1,16 @@
 "use strict";
 
-function logger() {
-  console.log(`My name is Lucas`);
+// Function declaration
+function calAge1(birthYear) {
+  return 2022 - birthYear;
 }
-logger();
-logger();
-logger();
+const age1 = calAge1(1997);
+console.log(age1);
 
-function fruitProcesser(apples, oranges) {
-  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-  return juice;
-}
-const appleJuice = fruitProcesser(5, 0);
-console.log(appleJuice);
-console.log(fruitProcesser(5, 0));
-
-const appleOrangeJuice = fruitProcesser(2, 4);
-console.log(appleOrangeJuice);
+// Function expression
+const calAge2 = function (birthYear) {
+  return 2022 - birthYear;
+};
+const age2 = calAge2(1997);
+console.log(age2);
+// anonymous function
