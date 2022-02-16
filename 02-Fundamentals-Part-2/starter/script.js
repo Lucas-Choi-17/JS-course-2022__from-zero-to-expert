@@ -1,16 +1,12 @@
 "use strict";
 
-// Function declaration
-function calAge1(birthYear) {
-  return 2022 - birthYear;
-}
-const age1 = calAge1(1997);
-console.log(age1);
+const calAge = (birthYear) => 2022 - birthYear;
+const age = calAge(1991);
+console.log(age);
 
-// Function expression
-const calAge2 = function (birthYear) {
-  return 2022 - birthYear;
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2022 - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years`;
 };
-const age2 = calAge2(1997);
-console.log(age2);
-// anonymous function
+console.log(yearsUntilRetirement(1997, `Choi`));
