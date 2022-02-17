@@ -1,12 +1,15 @@
 "use strict";
 
-const calAge = (birthYear) => 2022 - birthYear;
-const age = calAge(1991);
-console.log(age);
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-  const age = 2022 - birthYear;
-  const retirement = 65 - age;
-  return `${firstName} retires in ${retirement} years`;
-};
-console.log(yearsUntilRetirement(1997, `Choi`));
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangePieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
+  return juice;
+}
+
+console.log(fruitProcessor(2, 3));
