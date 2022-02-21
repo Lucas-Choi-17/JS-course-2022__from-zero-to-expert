@@ -1,21 +1,16 @@
 "use strict";
 
-const korea = 52;
-const usa = 334;
-const india = 1466;
-const canada = 383;
+const neighbours = new Array(`North Korea`, `China`, `Japan`);
+neighbours.push(`Utopia`);
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
 
-const populations = new Array(korea, usa, india, canada);
-console.log(populations.length === 4);
-
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
+if (!neighbours.includes(`Germany`)) {
+  console.log(`Probably not a central European country :D`);
 }
-const percentages = [
-  percentageOfWorld1(korea),
-  percentageOfWorld1(usa),
-  percentageOfWorld1(india),
-  percentageOfWorld1(canada),
-];
 
-console.log(percentages);
+neighbours[
+  neighbours.indexOf(`North Korea`)
+] = `Democratic People's Republic of Korea`;
+console.log(neighbours);
