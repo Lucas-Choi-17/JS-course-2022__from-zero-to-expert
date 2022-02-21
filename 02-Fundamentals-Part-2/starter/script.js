@@ -1,38 +1,36 @@
-const friend1 = "Michael";
-const friend2 = "Steven";
-const friend3 = "Peter";
+"use strict";
 
 const friends = ["Michael", "Steven", "Peter"];
+// Add elements
+const newLength = friends.push(`jay`);
 console.log(friends);
+console.log(newLength);
 
-const years = new Array(1991, 1984, 2008, 2020);
-console.log(years);
-
-console.log(friends[0]); // Michael
-console.log(friends[1]); // Steven
-console.log(friends[2]); // Peter
-
-console.log(friends.length);
-console.log(friends[friends.length - 1]); // last element of friends array
-
-friends[2] = "Jay";
+const newLength1 = friends.unshift("john");
 console.log(friends);
+console.log(newLength1);
 
-const firstName = `Lucas`;
-const lucas = [firstName, `Choi`, 2022 - 1997, "student", friends];
-console.log(lucas);
+// Remove elements
+const popped = friends.pop();
+console.log(friends);
+console.log(popped);
 
-// Exercise
-const calcAge = function (birthYear) {
-  return 2022 - birthYear;
-};
-const years1 = [1990, 1967, 2002, 2010, 2018];
+const popped1 = friends.shift();
+console.log(friends);
+console.log(popped1);
 
-const ages = [
-  calcAge(years1[0]),
-  calcAge(years1[1]),
-  calcAge(years1[2]),
-  calcAge(years1[3]),
-  calcAge(years1[years1.length - 1]),
-];
-console.log(ages);
+console.log(friends.indexOf("Steven"));
+console.log(friends.indexOf("Bob"));
+
+console.log(friends.includes("Steven"));
+console.log(friends.includes("Bob"));
+
+friends.push(23);
+console.log(friends.includes("23")); // false
+console.log(friends.includes(23)); // true
+console.log(friends.indexOf("23")); // -1
+console.log(friends.indexOf(23)); // 3
+
+if (friends.includes("Steven")) {
+  console.log(`You have friend called Steven`);
+}
