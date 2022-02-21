@@ -1,13 +1,21 @@
 "use strict";
 
-const percentageOfWorld1 = (population) => (population / 7900) * 100;
+const korea = 52;
+const usa = 334;
+const india = 1466;
+const canada = 383;
 
-function describePopulation(country, population) {
-  const percentage = percentageOfWorld1(population);
-  console.log(
-    `${country} has ${population} million people which is about ${percentage}% of the world`
-  );
+const populations = new Array(korea, usa, india, canada);
+console.log(populations.length === 4);
+
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
 }
-describePopulation(`Korea`, `52.21`);
-describePopulation(`USA`, `348`);
-describePopulation(`India`, `1466`);
+const percentages = [
+  percentageOfWorld1(korea),
+  percentageOfWorld1(usa),
+  percentageOfWorld1(india),
+  percentageOfWorld1(canada),
+];
+
+console.log(percentages);
