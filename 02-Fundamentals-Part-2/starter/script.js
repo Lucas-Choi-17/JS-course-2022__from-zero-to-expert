@@ -3,34 +3,34 @@
 const lucas = {
   firstName: "Lucas",
   lastName: "Choi",
-  age: 2022 - 1997,
+  birthYear: 1997,
   job: "student",
   friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2022 - birthYear;
+  // },
+
+  // calcAge: function () {
+  //   return 2022 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2022 - this.birthYear;
+    return this.age;
+  },
+  // Challenge
+  // "Lucas is a 25-year old student, and he has a/no driver's license"
+  getSummary: function () {
+    return `${this.firstName} is a ${this.age}-year old ${
+      this.job
+    }, and he has ${this.hasDriversLicense ? `a` : `no`} driver's license`;
+  },
 };
-console.log(lucas);
+console.log(lucas.calcAge());
+console.log(lucas.age);
+console.log(lucas.age);
+console.log(lucas.age);
 
-console.log(lucas.lastName);
-console.log(lucas["lastName"]);
-
-const nameKey = "Name";
-console.log(lucas["first" + nameKey]);
-console.log(lucas["last" + nameKey]);
-
-const interestedIn = prompt(
-  "What po you want to know about Lucas? Choose between firstName, lastName, age, job, and friends"
-);
-
-if (lucas[interestedIn]) {
-  console.log(lucas[interestedIn]);
-} else {
-  console.log(
-    `Wrong request! Choose between firstName, lastName, age, job, and friends`
-  );
-}
-lucas.location = "Korea";
-lucas["twitter"] = "@lucasChoi";
-console.log(lucas);
-
-console.log(
-  `${lucas.firstName} has ${lucas.friends.length} friends, and his best friend is called ${lucas.friends[0]}`
-);
+console.log(lucas.getSummary());
