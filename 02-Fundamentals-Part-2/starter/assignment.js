@@ -1,13 +1,12 @@
 "use strict";
 
-const populations = [52, 334, 1466, 383];
-const percentages2 = [];
-
-function percentageOfWorld1(population) {
-  return (population / 7900) * 100;
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+for (let i = 0; i <= listOfNeighbours.length - 1; i++) {
+  for (let k = 0; k <= listOfNeighbours[i].length - 1; k++) {
+    console.log(`Neighbour: ${listOfNeighbours[i][k]}`);
+  }
 }
-
-for (let i = 0; i <= populations.length - 1; i++) {
-  percentages2.push(percentageOfWorld1(populations[i]));
-}
-console.log(percentages2);
