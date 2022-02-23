@@ -1,23 +1,20 @@
 "use strict";
 
-const lucas = [
-  "Lucas",
-  "Choi",
-  2022 - 1997,
-  "student",
-  ["Michael", "Peter", "Steven"],
-];
-
-// Looping Backwards
-for (let i = lucas.length - 1; i >= 0; i--) {
-  console.log(i, lucas[i]);
+console.log(`-------using for loop-------`);
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weight repetition ${rep}🏋️‍♀️`);
 }
 
-// Loops in Loops
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`-------starting exercise ${exercise}`);
+console.log(`------using while loop------`);
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Lifting weight repetition ${rep}🏋️‍♀️`);
+  rep++;
+}
 
-  for (let rep = 1; rep < 6; rep++) {
-    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}🏋️‍♀️`);
-  }
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log(`Loop is about to end...`);
 }
